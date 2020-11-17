@@ -1,0 +1,21 @@
+{
+    "appName": "noter",
+    "roleName": "pinpointLambdaRoleaf9c6966",
+    "cloudformationPolicyName": "cloudformationPolicyaf9c6966",
+    "cloudWatchPolicyName": "cloudWatchPolicyaf9c6966",
+    "pinpointPolicyName": "pinpointPolicyaf9c6966",
+    "authPolicyName": "pinpoint_amplify_af9c6966",
+    "unauthPolicyName": "pinpoint_amplify_af9c6966",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

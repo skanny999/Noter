@@ -10,6 +10,11 @@
       "StackName": "amplify-noter-dev-202312",
       "StackId": "arn:aws:cloudformation:eu-west-2:268456659050:stack/amplify-noter-dev-202312/b8970ff0-2912-11eb-bb11-0622b5398c5a",
       "AmplifyAppId": "d37s24l0re26fg"
+    },
+    "categories": {
+      "auth": {
+        "cognito911411d3": {}
+      }
     }
   }
 }
