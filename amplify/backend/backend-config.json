@@ -36,5 +36,11 @@
         }
       ]
     }
+  },
+  "storage": {
+    "notesdb": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

@@ -1,0 +1,7 @@
+{
+    "tableName": "notes",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S",
+    "sortKeyName": "timeStamp",
+    "sortKeyType": "N"
+}
