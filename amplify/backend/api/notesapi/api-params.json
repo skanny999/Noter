@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/notes",
+            "lambdaFunction": "noterfunc",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/notes"
+        }
+    ],
+    "resourceName": "notesapi",
+    "apiName": "notesapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "noterfunc"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-noter-dev-202312-authRole",
+        "unAuthRoleName": "amplify-noter-dev-202312-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "noterfunc",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
