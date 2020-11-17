@@ -69,7 +69,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-noter-dev-202312-deployment",
-          "S3Key": "amplify-builds/noterfunc-72486634596374503465-build.zip"
+          "S3Key": "amplify-builds/noterfunc-71493163566536484f5a-build.zip"
         }
       }
     },
