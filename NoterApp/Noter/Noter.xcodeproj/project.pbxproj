@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D50C712567FFBF00190DAA /* NoterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C702567FFBF00190DAA /* NoterApp.swift */; };
+		09D50C732567FFBF00190DAA /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C722567FFBF00190DAA /* NotesListView.swift */; };
+		09D50C752567FFC000190DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D50C742567FFC000190DAA /* Assets.xcassets */; };
+		09D50C782567FFC000190DAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D50C772567FFC000190DAA /* Preview Assets.xcassets */; };
+		09D50C832567FFC000190DAA /* NoterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C822567FFC000190DAA /* NoterTests.swift */; };
+		09D50C8E2567FFC000190DAA /* NoterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C8D2567FFC000190DAA /* NoterUITests.swift */; };
+		09D50CA32567FFE200190DAA /* NOTESAPIResponseSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50CA02567FFE200190DAA /* NOTESAPIResponseSchema.swift */; };
+		09D50CA42567FFE200190DAA /* NOTESAPINotesapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50CA12567FFE200190DAA /* NOTESAPINotesapiClient.swift */; };
+		09D50CA52567FFE200190DAA /* NOTESAPIRequestSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50CA22567FFE200190DAA /* NOTESAPIRequestSchema.swift */; };
+		09D50D4E256808D400190DAA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50D4D256808D400190DAA /* ViewModel.swift */; };
+		09E8BAE925681587001D266A /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 09E8BAE725681587001D266A /* amplifyconfiguration.json */; };
+		09E8BAEA25681587001D266A /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 09E8BAE825681587001D266A /* awsconfiguration.json */; };
+		09E8BAEF25681CCF001D266A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BAEE25681CCF001D266A /* Note.swift */; };
+		09E8BAF525681CFE001D266A /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BAF425681CFE001D266A /* NotesViewModel.swift */; };
+		09E8BAFD25682184001D266A /* NoterApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BAFC25682184001D266A /* NoterApiService.swift */; };
+		09E8BB022568222D001D266A /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB012568222D001D266A /* NoteViewModel.swift */; };
+		09E8BB082568240D001D266A /* TypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB072568240D001D266A /* TypeExtensions.swift */; };
+		09E8BB1025682537001D266A /* NoterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB0F25682537001D266A /* NoterService.swift */; };
+		09E8BB1525684BF8001D266A /* NoterAWSApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB1425684BF8001D266A /* NoterAWSApiService.swift */; };
+		6C03E3E3C289E4ADC9A3FC69 /* Pods_Noter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA3D760E3D8CDC9A8039241 /* Pods_Noter.framework */; };
+		87C9FDB1658C7FA0DB954F87 /* Pods_Noter_NoterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D973E1D6AC301EAF278CC1D5 /* Pods_Noter_NoterUITests.framework */; };
+		BA4DB4C9EDA2CD3BD5D2407C /* Pods_NoterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B33389AAF481DF59A11FE94 /* Pods_NoterTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09D50C7F2567FFC000190DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09D50C652567FFBF00190DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D50C6C2567FFBF00190DAA;
+			remoteInfo = Noter;
+		};
+		09D50C8A2567FFC000190DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09D50C652567FFBF00190DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D50C6C2567FFBF00190DAA;
+			remoteInfo = Noter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09D50C6D2567FFBF00190DAA /* Noter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D50C702567FFBF00190DAA /* NoterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterApp.swift; sourceTree = "<group>"; };
+		09D50C722567FFBF00190DAA /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		09D50C742567FFC000190DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09D50C772567FFC000190DAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09D50C792567FFC000190DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D50C7E2567FFC000190DAA /* NoterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D50C822567FFC000190DAA /* NoterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterTests.swift; sourceTree = "<group>"; };
+		09D50C842567FFC000190DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D50C892567FFC000190DAA /* NoterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D50C8D2567FFC000190DAA /* NoterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterUITests.swift; sourceTree = "<group>"; };
+		09D50C8F2567FFC000190DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D50C9E2567FFE200190DAA /* AWSApiGatewayBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSApiGatewayBridge.h; sourceTree = "<group>"; };
+		09D50CA02567FFE200190DAA /* NOTESAPIResponseSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOTESAPIResponseSchema.swift; sourceTree = "<group>"; };
+		09D50CA12567FFE200190DAA /* NOTESAPINotesapiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOTESAPINotesapiClient.swift; sourceTree = "<group>"; };
+		09D50CA22567FFE200190DAA /* NOTESAPIRequestSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOTESAPIRequestSchema.swift; sourceTree = "<group>"; };
+		09D50CBF256800DB00190DAA /* Noter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Noter-Bridging-Header.h"; sourceTree = "<group>"; };
+		09D50D4D256808D400190DAA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		09E8BAE725681587001D266A /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = ../../../../../amplifyconfiguration.json; sourceTree = "<group>"; };
+		09E8BAE825681587001D266A /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../../../awsconfiguration.json; sourceTree = "<group>"; };
+		09E8BAEE25681CCF001D266A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		09E8BAF425681CFE001D266A /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		09E8BAFC25682184001D266A /* NoterApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterApiService.swift; sourceTree = "<group>"; };
+		09E8BB012568222D001D266A /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		09E8BB072568240D001D266A /* TypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeExtensions.swift; sourceTree = "<group>"; };
+		09E8BB0F25682537001D266A /* NoterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterService.swift; sourceTree = "<group>"; };
+		09E8BB1425684BF8001D266A /* NoterAWSApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterAWSApiService.swift; sourceTree = "<group>"; };
+		1E56E8E5092C2F3F8C6FD29A /* Pods-NoterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoterTests.release.xcconfig"; path = "Target Support Files/Pods-NoterTests/Pods-NoterTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B33389AAF481DF59A11FE94 /* Pods_NoterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2D7A4106F5F30C60D2AA5F /* Pods-Noter-NoterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noter-NoterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8275FA6C6B0FD36040BB557F /* Pods-Noter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noter.release.xcconfig"; path = "Target Support Files/Pods-Noter/Pods-Noter.release.xcconfig"; sourceTree = "<group>"; };
+		8EA3D760E3D8CDC9A8039241 /* Pods_Noter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE26DC507149084C6532919 /* Pods-Noter-NoterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noter-NoterUITests.release.xcconfig"; path = "Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D973E1D6AC301EAF278CC1D5 /* Pods_Noter_NoterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noter_NoterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB975B54CF3F6FA8893EDC7A /* Pods-NoterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoterTests.debug.xcconfig"; path = "Target Support Files/Pods-NoterTests/Pods-NoterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA547105B38DB11BD716281 /* Pods-Noter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noter.debug.xcconfig"; path = "Target Support Files/Pods-Noter/Pods-Noter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09D50C6A2567FFBF00190DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C03E3E3C289E4ADC9A3FC69 /* Pods_Noter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C7B2567FFC000190DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4DB4C9EDA2CD3BD5D2407C /* Pods_NoterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C862567FFC000190DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C9FDB1658C7FA0DB954F87 /* Pods_Noter_NoterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D50C642567FFBF00190DAA = {
+			isa = PBXGroup;
+			children = (
+				09D50C6F2567FFBF00190DAA /* Noter */,
+				09D50C812567FFC000190DAA /* NoterTests */,
+				09D50C8C2567FFC000190DAA /* NoterUITests */,
+				09D50C6E2567FFBF00190DAA /* Products */,
+				A0F8F5A05809AD00A948E72E /* Pods */,
+				412377B63E7F8F7190F62D3A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09D50C6E2567FFBF00190DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09D50C6D2567FFBF00190DAA /* Noter.app */,
+				09D50C7E2567FFC000190DAA /* NoterTests.xctest */,
+				09D50C892567FFC000190DAA /* NoterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09D50C6F2567FFBF00190DAA /* Noter */ = {
+			isa = PBXGroup;
+			children = (
+				09E8BB06256823EB001D266A /* Helpers */,
+				09E8BAF325681CD5001D266A /* Model */,
+				09D50D5225680E4800190DAA /* Services */,
+				09D50C702567FFBF00190DAA /* NoterApp.swift */,
+				09E8BAF425681CFE001D266A /* NotesViewModel.swift */,
+				09E8BB012568222D001D266A /* NoteViewModel.swift */,
+				09D50C722567FFBF00190DAA /* NotesListView.swift */,
+				09D50C742567FFC000190DAA /* Assets.xcassets */,
+				09D50C792567FFC000190DAA /* Info.plist */,
+				09D50C762567FFC000190DAA /* Preview Content */,
+				09D50D4D256808D400190DAA /* ViewModel.swift */,
+			);
+			path = Noter;
+			sourceTree = "<group>";
+		};
+		09D50C762567FFC000190DAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				09D50C772567FFC000190DAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09D50C812567FFC000190DAA /* NoterTests */ = {
+			isa = PBXGroup;
+			children = (
+				09D50C822567FFC000190DAA /* NoterTests.swift */,
+				09D50C842567FFC000190DAA /* Info.plist */,
+			);
+			path = NoterTests;
+			sourceTree = "<group>";
+		};
+		09D50C8C2567FFC000190DAA /* NoterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09D50C8D2567FFC000190DAA /* NoterUITests.swift */,
+				09D50C8F2567FFC000190DAA /* Info.plist */,
+			);
+			path = NoterUITests;
+			sourceTree = "<group>";
+		};
+		09D50CA92567FFED00190DAA /* NoterAPI */ = {
+			isa = PBXGroup;
+			children = (
+				09E8BAE725681587001D266A /* amplifyconfiguration.json */,
+				09E8BAE825681587001D266A /* awsconfiguration.json */,
+				09D50C9E2567FFE200190DAA /* AWSApiGatewayBridge.h */,
+				09D50CA12567FFE200190DAA /* NOTESAPINotesapiClient.swift */,
+				09D50CA22567FFE200190DAA /* NOTESAPIRequestSchema.swift */,
+				09D50CA02567FFE200190DAA /* NOTESAPIResponseSchema.swift */,
+				09D50CBF256800DB00190DAA /* Noter-Bridging-Header.h */,
+			);
+			path = NoterAPI;
+			sourceTree = "<group>";
+		};
+		09D50D5225680E4800190DAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				09D50CA92567FFED00190DAA /* NoterAPI */,
+				09E8BAFC25682184001D266A /* NoterApiService.swift */,
+				09E8BB1425684BF8001D266A /* NoterAWSApiService.swift */,
+				09E8BB0F25682537001D266A /* NoterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		09E8BAF325681CD5001D266A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09E8BAEE25681CCF001D266A /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E8BB06256823EB001D266A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09E8BB072568240D001D266A /* TypeExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		412377B63E7F8F7190F62D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA3D760E3D8CDC9A8039241 /* Pods_Noter.framework */,
+				D973E1D6AC301EAF278CC1D5 /* Pods_Noter_NoterUITests.framework */,
+				5B33389AAF481DF59A11FE94 /* Pods_NoterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F8F5A05809AD00A948E72E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEA547105B38DB11BD716281 /* Pods-Noter.debug.xcconfig */,
+				8275FA6C6B0FD36040BB557F /* Pods-Noter.release.xcconfig */,
+				6C2D7A4106F5F30C60D2AA5F /* Pods-Noter-NoterUITests.debug.xcconfig */,
+				ABE26DC507149084C6532919 /* Pods-Noter-NoterUITests.release.xcconfig */,
+				DB975B54CF3F6FA8893EDC7A /* Pods-NoterTests.debug.xcconfig */,
+				1E56E8E5092C2F3F8C6FD29A /* Pods-NoterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09D50C6C2567FFBF00190DAA /* Noter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D50C922567FFC000190DAA /* Build configuration list for PBXNativeTarget "Noter" */;
+			buildPhases = (
+				DD0FE85217DD833708CCFE8E /* [CP] Check Pods Manifest.lock */,
+				09D50C692567FFBF00190DAA /* Sources */,
+				09D50C6A2567FFBF00190DAA /* Frameworks */,
+				09D50C6B2567FFBF00190DAA /* Resources */,
+				6C588B3023B57C2C888900C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Noter;
+			productName = Noter;
+			productReference = 09D50C6D2567FFBF00190DAA /* Noter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09D50C7D2567FFC000190DAA /* NoterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D50C952567FFC000190DAA /* Build configuration list for PBXNativeTarget "NoterTests" */;
+			buildPhases = (
+				0F54E1F9321070B6214139CC /* [CP] Check Pods Manifest.lock */,
+				09D50C7A2567FFC000190DAA /* Sources */,
+				09D50C7B2567FFC000190DAA /* Frameworks */,
+				09D50C7C2567FFC000190DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D50C802567FFC000190DAA /* PBXTargetDependency */,
+			);
+			name = NoterTests;
+			productName = NoterTests;
+			productReference = 09D50C7E2567FFC000190DAA /* NoterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09D50C882567FFC000190DAA /* NoterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D50C982567FFC000190DAA /* Build configuration list for PBXNativeTarget "NoterUITests" */;
+			buildPhases = (
+				58FC82E43971D7C65053C7EB /* [CP] Check Pods Manifest.lock */,
+				09D50C852567FFC000190DAA /* Sources */,
+				09D50C862567FFC000190DAA /* Frameworks */,
+				09D50C872567FFC000190DAA /* Resources */,
+				6516F9EC89B4070B58C46F14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D50C8B2567FFC000190DAA /* PBXTargetDependency */,
+			);
+			name = NoterUITests;
+			productName = NoterUITests;
+			productReference = 09D50C892567FFC000190DAA /* NoterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09D50C652567FFBF00190DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					09D50C6C2567FFBF00190DAA = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					09D50C7D2567FFC000190DAA = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 09D50C6C2567FFBF00190DAA;
+					};
+					09D50C882567FFC000190DAA = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 09D50C6C2567FFBF00190DAA;
+					};
+				};
+			};
+			buildConfigurationList = 09D50C682567FFBF00190DAA /* Build configuration list for PBXProject "Noter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09D50C642567FFBF00190DAA;
+			productRefGroup = 09D50C6E2567FFBF00190DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09D50C6C2567FFBF00190DAA /* Noter */,
+				09D50C7D2567FFC000190DAA /* NoterTests */,
+				09D50C882567FFC000190DAA /* NoterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09D50C6B2567FFBF00190DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E8BAEA25681587001D266A /* awsconfiguration.json in Resources */,
+				09D50C782567FFC000190DAA /* Preview Assets.xcassets in Resources */,
+				09E8BAE925681587001D266A /* amplifyconfiguration.json in Resources */,
+				09D50C752567FFC000190DAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C7C2567FFC000190DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C872567FFC000190DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F54E1F9321070B6214139CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58FC82E43971D7C65053C7EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Noter-NoterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6516F9EC89B4070B58C46F14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C588B3023B57C2C888900C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noter/Pods-Noter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noter/Pods-Noter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noter/Pods-Noter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0FE85217DD833708CCFE8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Noter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D50C692567FFBF00190DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E8BB022568222D001D266A /* NoteViewModel.swift in Sources */,
+				09D50CA42567FFE200190DAA /* NOTESAPINotesapiClient.swift in Sources */,
+				09D50C732567FFBF00190DAA /* NotesListView.swift in Sources */,
+				09E8BAEF25681CCF001D266A /* Note.swift in Sources */,
+				09D50C712567FFBF00190DAA /* NoterApp.swift in Sources */,
+				09E8BAF525681CFE001D266A /* NotesViewModel.swift in Sources */,
+				09E8BAFD25682184001D266A /* NoterApiService.swift in Sources */,
+				09D50CA32567FFE200190DAA /* NOTESAPIResponseSchema.swift in Sources */,
+				09D50D4E256808D400190DAA /* ViewModel.swift in Sources */,
+				09E8BB082568240D001D266A /* TypeExtensions.swift in Sources */,
+				09E8BB1525684BF8001D266A /* NoterAWSApiService.swift in Sources */,
+				09E8BB1025682537001D266A /* NoterService.swift in Sources */,
+				09D50CA52567FFE200190DAA /* NOTESAPIRequestSchema.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C7A2567FFC000190DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D50C832567FFC000190DAA /* NoterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D50C852567FFC000190DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D50C8E2567FFC000190DAA /* NoterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09D50C802567FFC000190DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D50C6C2567FFBF00190DAA /* Noter */;
+			targetProxy = 09D50C7F2567FFC000190DAA /* PBXContainerItemProxy */;
+		};
+		09D50C8B2567FFC000190DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D50C6C2567FFBF00190DAA /* Noter */;
+			targetProxy = 09D50C8A2567FFC000190DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09D50C902567FFC000190DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09D50C912567FFC000190DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09D50C932567FFC000190DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA547105B38DB11BD716281 /* Pods-Noter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Noter/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Noter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.Noter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noter/Services/NoterAPI/Noter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09D50C942567FFC000190DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8275FA6C6B0FD36040BB557F /* Pods-Noter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Noter/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Noter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.Noter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noter/Services/NoterAPI/Noter-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09D50C962567FFC000190DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB975B54CF3F6FA8893EDC7A /* Pods-NoterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				INFOPLIST_FILE = NoterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.NoterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noter.app/Noter";
+			};
+			name = Debug;
+		};
+		09D50C972567FFC000190DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E56E8E5092C2F3F8C6FD29A /* Pods-NoterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				INFOPLIST_FILE = NoterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.NoterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noter.app/Noter";
+			};
+			name = Release;
+		};
+		09D50C992567FFC000190DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2D7A4106F5F30C60D2AA5F /* Pods-Noter-NoterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				INFOPLIST_FILE = NoterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.NoterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Noter;
+			};
+			name = Debug;
+		};
+		09D50C9A2567FFC000190DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE26DC507149084C6532919 /* Pods-Noter-NoterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GM46VBD99;
+				INFOPLIST_FILE = NoterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riccardoscanavacca.NoterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Noter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09D50C682567FFBF00190DAA /* Build configuration list for PBXProject "Noter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D50C902567FFC000190DAA /* Debug */,
+				09D50C912567FFC000190DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D50C922567FFC000190DAA /* Build configuration list for PBXNativeTarget "Noter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D50C932567FFC000190DAA /* Debug */,
+				09D50C942567FFC000190DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D50C952567FFC000190DAA /* Build configuration list for PBXNativeTarget "NoterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D50C962567FFC000190DAA /* Debug */,
+				09D50C972567FFC000190DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D50C982567FFC000190DAA /* Build configuration list for PBXNativeTarget "NoterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D50C992567FFC000190DAA /* Debug */,
+				09D50C9A2567FFC000190DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09D50C652567FFBF00190DAA /* Project object */;
+}
