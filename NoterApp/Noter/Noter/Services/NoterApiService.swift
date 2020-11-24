@@ -10,6 +10,9 @@ import Combine
 import Amplify
 
 protocol NoterApiService {
-    
-    func fetchNotes() -> AnyPublisher<Notes, Error>
+    func getNotes() -> AnyPublisher<Notes, Error>
+    func getNote(id: String) -> AnyPublisher<Note, Error>
+    func postNote(_ note: Note) -> AnyPublisher<Note, Error>
+    func putNote(_ note: Note) -> AnyPublisher<Note, Error>
+    func deleteNote(id: String) -> AnyPublisher<Void, Error>
 }

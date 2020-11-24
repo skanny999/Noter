@@ -20,11 +20,23 @@ final class NoterService {
     }
     
     func fetchNotes() -> AnyPublisher<Notes, Error> {
-            return Amplify.API.get(request: RESTRequest(path: "/notes"))
-                .resultPublisher
-                .decode(type: Notes.self, decoder: JSONDecoder())
-                .receive(on: DispatchQueue.main)
-                .eraseToAnyPublisher()
+        return apiService.getNotes()
+    }
+    
+    func fetchNote(id: String) -> AnyPublisher<Note, Error> {
+        return apiService.getNote(id: id)
+    }
+    
+    func createNote(_ note: Note) -> AnyPublisher<Note, Error> {
+        return apiService.postNote(note)
+    }
+    
+    func updateNote(_ note: Note) -> AnyPublisher<Note, Error> {
+        return apiService.putNote(note)
+    }
+    
+    func deleteNote(id: String) -> AnyPublisher<Void, Error> {
+        return apiService.deleteNote(id: id)
     }
 }
 

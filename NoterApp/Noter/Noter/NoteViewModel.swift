@@ -11,8 +11,12 @@ struct NoteViewModel: Hashable {
     
     let note: Note
     
+    var id: String {
+        note.id
+    }
+    
     var title: String {
-        note.title
+        note.title ?? note.text.truncate(length: 15)
     }
     
     var text: String {
@@ -20,7 +24,7 @@ struct NoteViewModel: Hashable {
     }
     
     var dateTime: String {
-        Date(timeIntervalSince1970: Double(note.timeStamp)).toMediumString
+        Date(timeIntervalSince1970: Double(note.timeStamp)!).toMediumString
     }
     
 }

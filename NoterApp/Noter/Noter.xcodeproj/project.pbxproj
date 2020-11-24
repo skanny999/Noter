@@ -26,6 +26,7 @@
 		09E8BB082568240D001D266A /* TypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB072568240D001D266A /* TypeExtensions.swift */; };
 		09E8BB1025682537001D266A /* NoterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB0F25682537001D266A /* NoterService.swift */; };
 		09E8BB1525684BF8001D266A /* NoterAWSApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BB1425684BF8001D266A /* NoterAWSApiService.swift */; };
+		09E8BB8A256C0161001D266A /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 09E8BB89256C0161001D266A /* MOCK_DATA.json */; };
 		6C03E3E3C289E4ADC9A3FC69 /* Pods_Noter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA3D760E3D8CDC9A8039241 /* Pods_Noter.framework */; };
 		87C9FDB1658C7FA0DB954F87 /* Pods_Noter_NoterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D973E1D6AC301EAF278CC1D5 /* Pods_Noter_NoterUITests.framework */; };
 		BA4DB4C9EDA2CD3BD5D2407C /* Pods_NoterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B33389AAF481DF59A11FE94 /* Pods_NoterTests.framework */; };
@@ -76,6 +77,7 @@
 		09E8BB072568240D001D266A /* TypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeExtensions.swift; sourceTree = "<group>"; };
 		09E8BB0F25682537001D266A /* NoterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterService.swift; sourceTree = "<group>"; };
 		09E8BB1425684BF8001D266A /* NoterAWSApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterAWSApiService.swift; sourceTree = "<group>"; };
+		09E8BB89256C0161001D266A /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MOCK_DATA.json; path = ../../../../../MOCK_DATA.json; sourceTree = "<group>"; };
 		1E56E8E5092C2F3F8C6FD29A /* Pods-NoterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoterTests.release.xcconfig"; path = "Target Support Files/Pods-NoterTests/Pods-NoterTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B33389AAF481DF59A11FE94 /* Pods_NoterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2D7A4106F5F30C60D2AA5F /* Pods-Noter-NoterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noter-NoterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Noter-NoterUITests/Pods-Noter-NoterUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,8 +146,8 @@
 				09E8BAF325681CD5001D266A /* Model */,
 				09D50D5225680E4800190DAA /* Services */,
 				09D50C702567FFBF00190DAA /* NoterApp.swift */,
-				09E8BAF425681CFE001D266A /* NotesViewModel.swift */,
 				09E8BB012568222D001D266A /* NoteViewModel.swift */,
+				09E8BAF425681CFE001D266A /* NotesViewModel.swift */,
 				09D50C722567FFBF00190DAA /* NotesListView.swift */,
 				09D50C742567FFC000190DAA /* Assets.xcassets */,
 				09D50C792567FFC000190DAA /* Info.plist */,
@@ -184,6 +186,7 @@
 		09D50CA92567FFED00190DAA /* NoterAPI */ = {
 			isa = PBXGroup;
 			children = (
+				09E8BB89256C0161001D266A /* MOCK_DATA.json */,
 				09E8BAE725681587001D266A /* amplifyconfiguration.json */,
 				09E8BAE825681587001D266A /* awsconfiguration.json */,
 				09D50C9E2567FFE200190DAA /* AWSApiGatewayBridge.h */,
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E8BAEA25681587001D266A /* awsconfiguration.json in Resources */,
+				09E8BB8A256C0161001D266A /* MOCK_DATA.json in Resources */,
 				09D50C782567FFC000190DAA /* Preview Assets.xcassets in Resources */,
 				09E8BAE925681587001D266A /* amplifyconfiguration.json in Resources */,
 				09D50C752567FFC000190DAA /* Assets.xcassets in Resources */,

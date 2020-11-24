@@ -13,14 +13,22 @@ struct NotesListView: View {
     
     var body: some View {
         NavigationView {
-            List(notesViewModel.notes, id: \.self) { noteViewModel in
-                Text(noteViewModel.title)
+            List {
+                ForEach(notesViewModel.notes, id: \.self) { noteViewModel in
+                    Text(noteViewModel.title)
+                }
+                .onDelete(perform: { indexSet in
+                    notesViewModel.deleteNote(at: indexSet)
+                })
+                .deleteDisabled(false)
             }
             .navigationBarTitle("Notes")
-            .navigationBarItems(trailing: Button("New note", action: {
-                print("add new note")
+            .navigationBarItems(trailing: Button("Update note", action: {
+
             }))
+            
         }
+        
     }
 }
 

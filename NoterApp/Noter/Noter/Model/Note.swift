@@ -9,7 +9,13 @@ import Foundation
 
 struct Note: Codable, Identifiable, Hashable {
     let id: String
-    let timeStamp: Int
-    let title: String
+    let timeStamp: String
+    let title: String?
     let text: String
 }
+
+struct AllNotes: Codable {
+    let notes: [Note]
+}
+
+
