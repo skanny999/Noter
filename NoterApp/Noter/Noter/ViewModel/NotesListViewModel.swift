@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
-class NotesViewModel: ObservableObject {
+class NotesListViewModel: ObservableObject {
     
     @Published var notes = [NoteViewModel]()
+    
+    var cancellable: AnyCancellable?
     
     private let service: NoterService
 
@@ -19,18 +21,16 @@ class NotesViewModel: ObservableObject {
     
     init(noterService: NoterService = NoterService()) {
         self.service = noterService
-        self.getNotes()
         self.configureClosures()
+        self.getNotes()
     }
     
     func configureClosures() {
         appendToNotes = {
             self.notes.append(NoteViewModel(note: $0))
         }
-        printError = { self.printError($0) }
+        printError = { print($0) }
     }
-
-    var cancellable: AnyCancellable?
     
     func getNotes() {
         cancellable = service.fetchNotes()
@@ -72,8 +72,11 @@ class NotesViewModel: ObservableObject {
         }
     }
     
-    func uploadNotes() {
-        guard let url = Bundle.main.url(forResource: "MOCK_DATA", withExtension: "json") else {return}
+    private func uploadNotes() {
+        guard let url = Bundle.main.url(forResource: "MOCK_DATA", withExtension: "json") else {
+            print("Couldn't find mock data file")
+            return
+        }
             do {
                 let data = try Data(contentsOf: url)
                 let jsonData = try JSONDecoder().decode(Array<Note>.self, from: data)
@@ -88,7 +91,6 @@ class NotesViewModel: ObservableObject {
                             print("note uploaded")
                             dispatchGroup.leave()
                         })
-                    
                     dispatchGroup.notify(queue: .main) {
                         print("executed")
                     }

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct NotesListView: View {
     
-    @ObservedObject var notesViewModel = NotesViewModel()
+    @ObservedObject var notesViewModel = NotesListViewModel()
+    @State var showingNew = false
     
     var body: some View {
         NavigationView {
@@ -23,8 +24,11 @@ struct NotesListView: View {
                 .deleteDisabled(false)
             }
             .navigationBarTitle("Notes")
-            .navigationBarItems(trailing: Button("Update note", action: {
-
+            .navigationBarItems(trailing: Button("New Note", action: {
+                self.showingNew.toggle()
+            })
+            .sheet(isPresented: $showingNew, content: {
+                NewNoteView(title: "New Note", isEditable: true)
             }))
             
         }
