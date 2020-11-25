@@ -7,28 +7,39 @@
 
 import SwiftUI
 
-struct NewNoteView: View {
+struct NoteView: View {
     
     @ObservedObject var notesViewModel: NotesListViewModel
+    @State var noteViewModel: NoteViewModel?
     
-    @Binding var showingNew: Bool
+    @Binding var isShowing: Bool
     
-    @State var title: String = ""
-    @State private var text = ""
-    @State private var textStyle = UIFont.TextStyle.body
+    init(_ notesViewModel: NotesListViewModel, _ noteViewModel: NoteViewModel? = nil, isShowing: Binding<Bool>) {
+        self.notesViewModel = notesViewModel
+       _noteViewModel = State(initialValue:noteViewModel)
+        _title = State(initialValue: noteViewModel?.title ?? "")
+        _text = State(initialValue: noteViewModel?.text ?? "")
+        _isEditable = State(initialValue: noteViewModel == nil)
+        _isShowing = isShowing
+    }
+    
+    @State var title: String
+    @State private var text: String
     @State var isEditable: Bool
+    @State private var textStyle = UIFont.TextStyle.body
+
     
     var body: some View {
         VStack {
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 30){
                 Button("Cancels", action: {
-                    self.showingNew.toggle()
+                    self.isShowing.toggle()
                 })
                 .padding(.leading)
                 Spacer()
                 Button("Save", action: {
                     notesViewModel.createNote(title: title, text: text)
-                    self.showingNew.toggle()
+                    self.isShowing.toggle()
                 })
                 .padding(.trailing)
             }
@@ -46,9 +57,6 @@ struct NewNoteView: View {
 
 struct NewNoteView_Previews: PreviewProvider {
     static var previews: some View {
-        NewNoteView(notesViewModel: NotesListViewModel(),
-                    showingNew: .constant(true),
-                    title: "New note",
-                    isEditable: false)
+        NoteView(NotesListViewModel(), isShowing: .constant(true))
     }
 }

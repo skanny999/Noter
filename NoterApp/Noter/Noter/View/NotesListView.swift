@@ -10,13 +10,15 @@ import SwiftUI
 struct NotesListView: View {
     
     @ObservedObject var notesViewModel = NotesListViewModel()
-    @State var showingNew = false
+    @State var isShowing = false
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(notesViewModel.notes, id: \.self) { noteViewModel in
-                    Text(noteViewModel.title)
+                    NavigationLink(noteViewModel.title,
+                                   destination: NoteView(notesViewModel, noteViewModel, isShowing: $isShowing))
+
                 }
                 .onDelete(perform: { indexSet in
                     notesViewModel.deleteNote(at: indexSet)
@@ -25,16 +27,12 @@ struct NotesListView: View {
             }
             .navigationBarTitle("Notes")
             .navigationBarItems(trailing: Button("New Note", action: {
-                self.showingNew.toggle()
+                self.isShowing.toggle()
             })
-            .sheet(isPresented: $showingNew, content: {
-                NewNoteView(notesViewModel: notesViewModel,
-                            showingNew: self.$showingNew,
-                            isEditable: true)
+            .sheet(isPresented: $isShowing, content: {
+                NoteView(notesViewModel, isShowing: self.$isShowing)
             }))
-            
         }
-        
     }
 }
 
