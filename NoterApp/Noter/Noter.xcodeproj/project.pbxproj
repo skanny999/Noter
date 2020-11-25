@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09373DD4256D6A4600AD9C01 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09373DD3256D6A4600AD9C01 /* NewNoteView.swift */; };
 		09373DD9256D6EA400AD9C01 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09373DD8256D6EA400AD9C01 /* TextView.swift */; };
+		09BD8059256E96C00018752D /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09373DD3256D6A4600AD9C01 /* NewNoteView.swift */; };
 		09D50C712567FFBF00190DAA /* NoterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C702567FFBF00190DAA /* NoterApp.swift */; };
 		09D50C732567FFBF00190DAA /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D50C722567FFBF00190DAA /* NotesListView.swift */; };
 		09D50C752567FFC000190DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D50C742567FFC000190DAA /* Assets.xcassets */; };
@@ -519,6 +519,7 @@
 				09E8BB022568222D001D266A /* NoteViewModel.swift in Sources */,
 				09D50CA42567FFE200190DAA /* NOTESAPINotesapiClient.swift in Sources */,
 				09D50C732567FFBF00190DAA /* NotesListView.swift in Sources */,
+				09BD8059256E96C00018752D /* NewNoteView.swift in Sources */,
 				09373DD9256D6EA400AD9C01 /* TextView.swift in Sources */,
 				09E8BAEF25681CCF001D266A /* Note.swift in Sources */,
 				09D50C712567FFBF00190DAA /* NoterApp.swift in Sources */,
@@ -527,7 +528,6 @@
 				09D50CA32567FFE200190DAA /* NOTESAPIResponseSchema.swift in Sources */,
 				09E8BB082568240D001D266A /* TypeExtensions.swift in Sources */,
 				09E8BB1525684BF8001D266A /* NoterAWSApiService.swift in Sources */,
-				09373DD4256D6A4600AD9C01 /* NewNoteView.swift in Sources */,
 				09E8BB1025682537001D266A /* NoterService.swift in Sources */,
 				09D50CA52567FFE200190DAA /* NOTESAPIRequestSchema.swift in Sources */,
 			);

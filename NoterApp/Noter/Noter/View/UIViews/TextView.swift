@@ -20,11 +20,33 @@ struct TextView: UIViewRepresentable {
         textView.autocapitalizationType = .sentences
         textView.isSelectable = true
         textView.isUserInteractionEnabled = isEditable
+        textView.delegate = context.coordinator
         return textView
     }
     
     func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = text
         uiView.font = UIFont.preferredFont(forTextStyle: textStyle)
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator($text)
+    }
+}
+
+
+extension TextView {
+    
+    class Coordinator: NSObject, UITextViewDelegate {
+        
+        var text: Binding<String>
+        
+        init(_ text: Binding<String>) {
+            self.text = text
+        }
+        
+        func textViewDidChange(_ textView: UITextView) {
+            self.text.wrappedValue = textView.text
+        }
     }
 }

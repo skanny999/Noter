@@ -45,7 +45,11 @@ class NotesListViewModel: ObservableObject {
             .sink(receiveCompletion: printError, receiveValue:appendToNotes)
     }
     
-    func createNote(_ note: Note) {
+    func createNote(title: String?, text: String) {
+        let note = Note(id: UUID().uuidString,
+                        timeStamp: String(Date().timeIntervalSince1970),
+                        title: title,
+                        text: text)
         cancellable = service.createNote(note)
             .sink(receiveCompletion: printError, receiveValue:appendToNotes)
     }

@@ -28,7 +28,9 @@ struct NotesListView: View {
                 self.showingNew.toggle()
             })
             .sheet(isPresented: $showingNew, content: {
-                NewNoteView(title: "New Note", isEditable: true)
+                NewNoteView(notesViewModel: notesViewModel,
+                            showingNew: self.$showingNew,
+                            isEditable: true)
             }))
             
         }
